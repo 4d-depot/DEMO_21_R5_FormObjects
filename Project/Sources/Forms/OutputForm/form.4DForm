@@ -1,0 +1,325 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 694,
+	"windowMinHeight": 480,
+	"windowTitle": "Order desk - Orders",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"btnAdd": {
+					"type": "button",
+					"text": "Add",
+					"top": 20,
+					"left": 20,
+					"width": 80,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnAdd.4dm",
+					"tooltip": "New order",
+					"style": "regular"
+				},
+				"btnEdit": {
+					"type": "button",
+					"text": "Edit",
+					"top": 20,
+					"left": 110,
+					"width": 80,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnEdit.4dm",
+					"tooltip": "Edit order",
+					"style": "regular"
+				},
+				"btnDrop": {
+					"type": "button",
+					"text": "Delete",
+					"top": 20,
+					"left": 200,
+					"width": 80,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btnDrop.4dm",
+					"tooltip": "Delete order",
+					"style": "regular"
+				},
+				"ListOrders": {
+					"type": "listbox",
+					"left": 20,
+					"top": 68,
+					"width": 674,
+					"height": 392,
+					"listboxType": "collection",
+					"dataSource": "Form.orders",
+					"currentItemSource": "Form.selectedOrder",
+					"selectionMode": "single",
+					"events": [
+						"onSelectionChange",
+						"onDoubleClick"
+					],
+					"hideFocusRing": true,
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"sizingY": "grow",
+					"sizingX": "grow",
+					"columns": [
+						{
+							"name": "Order",
+							"dataSource": "This.orderNumber",
+							"header": {
+								"text": "Order",
+								"name": "Header1"
+							},
+							"width": 80,
+							"footer": {
+								"name": "Footer1"
+							},
+							"minWidth": 80,
+							"maxWidth": 200
+						},
+						{
+							"name": "Customer",
+							"dataSource": "This.customer",
+							"header": {
+								"text": "Customer",
+								"name": "Header2"
+							},
+							"width": 200,
+							"footer": {
+								"name": "Footer2"
+							},
+							"minWidth": 120,
+							"maxWidth": 300
+						},
+						{
+							"name": "Status",
+							"dataSource": "This.status",
+							"header": {
+								"text": "Status",
+								"name": "Header3"
+							},
+							"width": 130,
+							"footer": {
+								"name": "Footer3"
+							},
+							"minWidth": 120,
+							"maxWidth": 300
+						},
+						{
+							"name": "Total",
+							"dataSource": "This.total",
+							"header": {
+								"text": "Total",
+								"name": "Header4"
+							},
+							"width": 120,
+							"footer": {
+								"name": "Footer4"
+							},
+							"minWidth": 120,
+							"maxWidth": 300
+						},
+						{
+							"name": "Date",
+							"dataSource": "This.date",
+							"dataSourceTypeHint": "date",
+							"dateFormat": "abbreviated",
+							"header": {
+								"text": "Date",
+								"name": "Header5"
+							},
+							"width": 120,
+							"footer": {
+								"name": "Footer5"
+							},
+							"minWidth": 120,
+							"maxWidth": 300
+						}
+					]
+				},
+				"controlPanel": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 715,
+					"width": 290,
+					"height": 440,
+					"borderRadius": 8,
+					"fill": "transparent",
+					"class": "toolbar-surface",
+					"sizingX": "move",
+					"sizingY": "grow",
+					"visibility": "visible"
+				},
+				"panelTitle": {
+					"type": "text",
+					"text": "Theme",
+					"top": 29,
+					"left": 735,
+					"width": 190,
+					"height": 19,
+					"fontSize": 16,
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"themeSystem": {
+					"type": "button",
+					"text": "System",
+					"top": 64,
+					"left": 735,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/themeSystem.4dm",
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"themeBlue": {
+					"type": "button",
+					"text": "Blue",
+					"top": 64,
+					"left": 870,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/themeBlue.4dm",
+					"borderFillColor": "#2E75B6",
+					"borderColor": "#1F4E79",
+					"borderWidth": 1,
+					"borderRadius": 6,
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"themeGrey": {
+					"type": "button",
+					"text": "Grey",
+					"top": 131,
+					"left": 870,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/themeGrey.4dm",
+					"borderFillColor": "#16835B",
+					"borderColor": "#0E5A3E",
+					"borderWidth": 1,
+					"borderRadius": 12,
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"themePop": {
+					"type": "button",
+					"text": "Orange",
+					"top": 98,
+					"left": 870,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/themePop.4dm",
+					"borderFillColor": "#F76707",
+					"borderColor": "#C2410C",
+					"borderWidth": 1,
+					"borderRadius": 12,
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"codeLabel": {
+					"type": "text",
+					"text": "Code applied",
+					"top": 180,
+					"left": 735,
+					"width": 190,
+					"height": 16,
+					"fontWeight": "bold",
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"themeCode": {
+					"type": "input",
+					"top": 200,
+					"left": 735,
+					"width": 250,
+					"height": 244,
+					"dataSource": "Form.code",
+					"enterable": false,
+					"focusable": false,
+					"multiline": "yes",
+					"wordwrap": "normal",
+					"fontFamily": "Menlo",
+					"fontSize": 10,
+					"borderStyle": "none",
+					"fill": "transparent",
+					"scrollbarVertical": "hidden",
+					"sizingX": "move",
+					"sizingY": "grow",
+					"visibility": "visible"
+				},
+				"themeRoundedSystem": {
+					"type": "button",
+					"text": "Rounded System",
+					"top": 98,
+					"left": 735,
+					"width": 120,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/themeRoundedSystem.4dm",
+					"sizingX": "move",
+					"visibility": "visible"
+				},
+				"bCollapse": {
+					"type": "checkbox",
+					"text": "Checkbox",
+					"top": 24,
+					"left": 674,
+					"width": 20,
+					"height": 20,
+					"events": [
+						"onLoad",
+						"onClick"
+					],
+					"method": "ObjectMethods/bCollapse.4dm",
+					"style": "disclosure",
+					"dataSource": "Form:C1466.isCollapsed",
+					"sizingX": "move"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"geometryStamp": 407,
+	"events": [
+		"onLoad",
+		"onDoubleClick"
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"formSizeAnchor": "ListOrders"
+}

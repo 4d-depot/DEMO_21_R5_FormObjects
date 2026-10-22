@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="DEMO_21_R5_FormObjects" uuid="FB8E3401AAC642E7AF09FF26DAA20B93" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Order" uuid="6F1F4AA44E194D3BA9A9E6A8B0D4E8C1" id="3">
+		<field name="ID" uuid="4E4B9F3A8C4E4A8B9A1C2D3E4F5A6B7C" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="orderNumber" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF01" type="10" limiting_length="32" id="2"/>
+		<field name="customer" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF02" type="10" limiting_length="255" id="3"/>
+		<field name="status" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF03" type="10" limiting_length="64" id="4"/>
+		<field name="total" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF04" type="10" limiting_length="32" id="5"/>
+		<field name="date" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF05" type="8" id="6"/>
+		<field name="address" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF06" type="10" limiting_length="255" id="7"/>
+		<field name="notes" uuid="1A2B3C4D5E6F478890AABBCCDDEEFF07" type="10" limiting_length="255" id="8"/>
+		<primary_key field_name="ID" field_uuid="4E4B9F3A8C4E4A8B9A1C2D3E4F5A6B7C"/>
+		<table_extra output_form="OutputForm" input_form="InputForm"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="D3F8685358C2491EA3D55AECAD4A51B8" type="1">
+		<field_ref uuid="4E4B9F3A8C4E4A8B9A1C2D3E4F5A6B7C" name="ID">
+			<table_ref uuid="6F1F4AA44E194D3BA9A9E6A8B0D4E8C1" name="Order"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

@@ -1,0 +1,20 @@
+{
+	"tables": {
+		"Order": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 40,
+				"top": 40,
+				"width": 257.05859375,
+				"height": 240.51171875
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 1
+		}
+	}
+}

@@ -1,0 +1,43 @@
+
+.toolbar-surface {
+    stroke: #E4EBF3;
+}
+
+.label {
+    stroke: #323232;
+}
+
+.btnBlue {
+    borderFillColor: #0A84FF;
+    borderColor: #0070DB;
+    stroke: #FFFFFF;
+}
+
+.btnGreen {
+    borderFillColor: #2E9E44;
+    borderColor: #23803A;
+    stroke: #FFFFFF;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .toolbar-surface {
+        stroke: #4d4c4c;
+    }
+
+    .label {
+        stroke: #E0E0E0;
+    }
+
+    .btnBlue {
+        borderFillColor: #1D4660;
+        borderColor: #0065A8;
+    }
+
+    .btnGreen {
+        borderFillColor: #214D28;
+        borderColor: #1B5E20;
+    }
+}
+
+

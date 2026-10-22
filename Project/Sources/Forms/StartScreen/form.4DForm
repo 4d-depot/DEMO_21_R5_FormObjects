@@ -1,0 +1,97 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowTitle": "Form Objects - Border & Background styles",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"title": {
+					"type": "text",
+					"text": "Border & Background Styles",
+					"top": 25,
+					"left": 20,
+					"width": 520,
+					"height": 33,
+					"fontSize": 28,
+					"textAlign": "center",
+					"class": "label",
+					"sizingX": "grow",
+					"right": 540
+				},
+				"subtitle": {
+					"type": "text",
+					"text": "Custom borders, background colors and corner radius in 4D 21 R5, set from the Form Editor, CSS or code.",
+					"top": 78,
+					"left": 20,
+					"width": 520,
+					"height": 50,
+					"fontSize": 14,
+					"textAlign": "center",
+					"class": "label",
+					"sizingX": "grow"
+				},
+				"outputButton": {
+					"type": "button",
+					"text": "Open Demo Orders",
+					"top": 145,
+					"left": 20,
+					"width": 250,
+					"height": 250,
+					"style": "custom",
+					"borderWidth": 2,
+					"borderRadius": 8,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/outputButton.4dm",
+					"borderStyle": "custom",
+					"class": "btnBlue",
+					"fontSize": 18,
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"dataButton": {
+					"type": "button",
+					"text": "Generate Data",
+					"top": 145,
+					"left": 290,
+					"width": 250,
+					"height": 250,
+					"style": "custom",
+					"borderWidth": 2,
+					"borderRadius": 8,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/dataButton.4dm",
+					"borderStyle": "custom",
+					"class": "btnGreen",
+					"fontSize": 18,
+					"sizingX": "grow",
+					"sizingY": "grow"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"geometryStamp": 83,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"events": [
+		"onResize"
+	]
+}

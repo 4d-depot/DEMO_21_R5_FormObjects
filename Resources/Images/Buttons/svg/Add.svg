@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 96" width="24" height="96">
+  <defs>
+    <style>
+      .normal { stroke: #1f5f9d; }
+      .hover { stroke: #0d47a1; }
+      .pressed { stroke: #0a3d7d; }
+      .disabled { stroke: #b0b0b0; }
+      @media (prefers-color-scheme: dark) {
+        .normal { stroke: #9cc6f0; }
+        .hover { stroke: #c5e1ff; }
+        .pressed { stroke: #6badff; }
+        .disabled { stroke: #707070; }
+      }
+    </style>
+  </defs>
+  <!-- Normal state (0-24) -->
+  <g>
+    <path class="normal" d="M12 5v14M5 12h14" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Hover state (24-48) -->
+  <g transform="translate(0, 24)">
+    <path class="hover" d="M12 5v14M5 12h14" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Pressed state (48-72) -->
+  <g transform="translate(0, 48)">
+    <path class="pressed" d="M12 6v12M6 12h12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Disabled state (72-96) -->
+  <g transform="translate(0, 72)">
+    <path class="disabled" d="M12 5v14M5 12h14" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
+  </g>
+</svg>
