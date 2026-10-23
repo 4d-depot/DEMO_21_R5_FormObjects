@@ -1,4 +1,6 @@
 // Navigation is handled by the two buttons on this screen.
+var $lf; $tf; $rf; $bf; $width; $height : Integer
+
 Case of 
 	: (Form event code=On Resize)
 		GET WINDOW RECT($lf; $tf; $rf; $bf; Current form window)
