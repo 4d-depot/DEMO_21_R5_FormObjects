@@ -12,9 +12,9 @@ It covers:
 - **CSS classes** with light and dark mode rules for the start screen buttons.
 
 Here is a list of blog posts covering the different features used in this demo:
-- [Customize Buttons, Radio Buttons, and Check Boxes with Background and Border Properties](https://blog.4d.com/?p=73907&preview=1&_ppp=0af86a4a69)
-- [Give Your Text and List Objects the Border Color They Deserve](https://blog.4d.com/?p=73978&preview=1&_ppp=3b51e3cc3d)
-- [Choose the Right Native Input Style for Your Interface on macOS](https://blog.4d.com/?p=73995&preview=1&_ppp=c12d8a08d7)
+- [Customize Buttons, Radio Buttons, and Check Boxes with Background and Border Properties](https://blog.4d.com/customize-buttons-radio-buttons-and-check-boxes-with-background-and-border-properties/)
+- [Give Your Form Objects the Border Color They Deserve](https://blog.4d.com/give-your-form-objects-the-border-color-they-deserve/)
+- [Choose the Right Native Input Style for Your Interface on macOS](https://blog.4d.com/choose-the-right-native-input-style-for-your-interface-on-macos/)
 
 
 ## Installing and Using a 4D Project
